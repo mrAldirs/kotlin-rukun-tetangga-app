@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ERT</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="deskripsi">RT Elektronik Mobile adalah sebuah aplikasi mobile yang dirancang khusus untuk mempermudah pengelolaan kegiatan dan informasi di lingkungan RT. Dengan RT Elektronik Mobile, pengguna dapat dengan mudah mengakses berbagai fitur dan layanan yang berkaitan dengan kehidupan sehari-hari di lingkungan RT.
+\n\n
+Aplikasi ini menyediakan berbagai fitur penting seperti pengumuman RT, jadwal kegiatan, daftar anggota RT, manajemen keuangan, dan pelaporan masalah. Pengguna dapat dengan cepat mendapatkan informasi terkini tentang acara atau perubahan penting di lingkungan RT, seperti pertemuan warga, pembersihan jalan, atau kegiatan sosial.
+\n\n
+Selain itu, aplikasi ini juga memudahkan pengguna dalam mengelola keuangan RT. Pengguna dapat mencatat dan melacak transaksi keuangan seperti pembayaran iuran warga, pengeluaran rutin RT, atau pengumpulan dana untuk kegiatan RT. Dengan fitur manajemen keuangan yang terintegrasi, pengguna dapat mengelola keuangan RT dengan lebih efisien dan transparan.
+\n\n
+Selain itu, RT Elektronik Mobile juga memberikan fasilitas pelaporan masalah. Jika ada masalah atau permasalahan di lingkungan RT, pengguna dapat dengan mudah melaporkannya melalui aplikasi ini. Misalnya, pengguna dapat melaporkan kerusakan fasilitas umum, gangguan keamanan, atau keluhan lainnya. Tim pengelola RT dapat dengan cepat merespons dan mengatasi masalah tersebut untuk meningkatkan kenyamanan dan keamanan lingkungan RT.
+\n\n
+Dengan antarmuka yang intuitif dan mudah digunakan, RT Elektronik Mobile menjadikan pengelolaan RT lebih efisien dan terorganisir. Aplikasi ini memungkinkan pengguna untuk tetap terhubung dengan komunitas RT, mendapatkan informasi yang relevan, serta berpartisipasi dalam kegiatan dan pengambilan keputusan yang berkaitan dengan lingkungan mereka.
+\n\n
+RT Elektronik Mobile adalah solusi praktis dan efektif untuk memperkuat komunikasi, transparansi, dan kolaborasi antara warga RT dalam mengelola dan memajukan lingkungan mereka.</string>
+</resources>

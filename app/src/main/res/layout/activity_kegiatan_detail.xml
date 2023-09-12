@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="36dp"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/judul"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Detail \nKegiatan \nRT Anda!" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_register_hero" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/btnHapus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus"
+                    android:drawableLeft="@drawable/delete"
+                    android:drawableTint="#FF8A80"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="end"
+                    android:textColor="#FF8A80"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:layout_marginEnd="112dp"
+                    android:drawableLeft="@drawable/edit"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorAccent"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="12dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorAccent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginHorizontal="12dp">
+
+                        <EditText
+                            android:id="@+id/detailNamaKegiatan"
+                            style="@style/modifiedEditText2"
+                            android:hint="Nama Kegiatan"
+                            android:enabled="false"
+                            android:textColor="@color/white"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginHorizontal="12dp">
+
+                        <EditText
+                            android:id="@+id/detailTempat"
+                            style="@style/modifiedEditText2"
+                            android:hint="Tempat Kegiatan"
+                            android:enabled="false"
+                            android:textColor="@color/white"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginHorizontal="12dp">
+
+                        <EditText
+                            android:id="@+id/detailJam"
+                            style="@style/modifiedEditText2"
+                            android:hint="Jam Kegiatan"
+                            android:enabled="false"
+                            android:textColor="@color/white"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginHorizontal="12dp">
+
+                        <EditText
+                            android:id="@+id/detailTgl"
+                            style="@style/modifiedEditText2"
+                            android:hint="Tanggal Kegiatan"
+                            android:textColor="@color/white"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginHorizontal="12dp">
+
+                        <EditText
+                            android:id="@+id/detailNama"
+                            style="@style/modifiedEditText2"
+                            android:enabled="false"
+                            android:textColor="@color/white"
+                            android:hint="Penanggung Jawab Kegiatan"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dokumentasi Kegiatan"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/btn_insert_dokumentasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah"
+                    android:drawableLeft="@drawable/add"
+                    android:drawableTint="#3F51B5"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="end"
+                    android:textSize="16sp"
+                    android:textColor="#3F51B5"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="8dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/row_dokumentasi"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_side_bg"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

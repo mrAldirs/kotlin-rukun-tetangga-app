@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeAdmin"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_userAdmin"
+        android:icon="@drawable/akun"
+        android:title="Daftar Pengguna"/>
+
+    <item
+        android:title="Kegiatan"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_insertKegiatan"
+                android:icon="@drawable/add"
+                android:title="Tambah Kegiatan"/>
+
+            <item
+                android:id="@+id/nav_kegiatanAdmin"
+                android:icon="@drawable/history"
+                android:title="Riwayat Kegiatan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Keuangan"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_keuanganAdmin"
+                android:icon="@drawable/privacy"
+                android:title="Laporan Keuangan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Lainnya"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_keluhanAdmin"
+                android:icon="@drawable/keluhan"
+                android:title="Keluhan dan Masukan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Pengaturan"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_logoutAdmin"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

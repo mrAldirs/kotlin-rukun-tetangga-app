@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/lapMainKegiatan"
+            style="@style/modifiedEditText"
+            android:hint="Nama Kegiatan"
+            android:enabled="false"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_width="150dp">
+
+            <EditText
+                android:id="@+id/lapMainMasuk"
+                style="@style/modifiedEditText"
+                android:hint="Uang Masuk"
+                android:enabled="false"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_width="150dp"
+            android:layout_gravity="end">
+
+            <EditText
+                android:id="@+id/lapMainKeluar"
+                style="@style/modifiedEditText"
+                android:hint="Uang Keluar"
+                android:enabled="false"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/lapMainSisa"
+            style="@style/modifiedEditText"
+            android:hint="Uang Sisa Kegiatan"
+            android:enabled="false"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/lapMainTotal"
+            style="@style/modifiedEditText"
+            android:hint="Total Kas RT"
+            android:enabled="false"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/lapMainKet"
+            style="@style/modifiedEditText"
+            android:hint="Keterangan Laporan"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:maxLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

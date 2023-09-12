@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="0dp">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/kegiatanNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:text="Nama Kegiatan"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/kegiatanPj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            android:textColor="#C1C1C1"
+            android:text="user"/>
+
+        <TextView
+            android:id="@+id/kegiatanJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="38dp"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#C1C1C1"
+            android:text="jam"/>
+
+        <TextView
+            android:id="@+id/kegiatanTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="38dp"
+            android:textSize="13sp"
+            android:text="tanggal"
+            android:textColor="#C1C1C1"
+            android:layout_gravity="end"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeLogin"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_akunLogin"
+        android:icon="@drawable/logout"
+        android:title="Login Aplikasi"/>
+
+    <item
+        android:id="@+id/nav_registrasiLogin"
+        android:icon="@drawable/registrasi"
+        android:title="Buat Akun Baru"/>
+
+    <item
+        android:title="Pengumuman"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_kegiatanLogin"
+                android:icon="@drawable/hand"
+                android:title="Kegiatan"/>
+
+            <item
+                android:id="@+id/nav_keuanganLogin"
+                android:icon="@drawable/keuangan"
+                android:title="Keuangan"/>
+
+            <item
+                android:id="@+id/nav_laporanLogin"
+                android:icon="@drawable/privacy"
+                android:title="Laporan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Lainnya"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_keluhanLogin"
+                android:icon="@drawable/keluhan"
+                android:title="Keluhan dan Masukan"/>
+        </menu>
+
+    </item>
+
+</menu>

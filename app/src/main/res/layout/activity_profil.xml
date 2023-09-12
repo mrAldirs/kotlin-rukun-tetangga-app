@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/detailImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/users"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_login_hero" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:drawableLeft="@drawable/edit"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_gravity="end"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="12dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="24dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="12dp"
+                android:layout_marginHorizontal="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kepala Keluarga"
+                        android:textColor="#009688"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+                        android:layout_marginStart="8dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailNama"
+                            style="@style/modifiedEditText"
+                            android:hint="Nama"
+                            android:textColor="#8A8A8A"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailNik"
+                            style="@style/modifiedEditText"
+                            android:hint="Nomor Induk Keluarga"
+                            android:textColor="#8A8A8A"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#00FFFFFF">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_width="120dp">
+
+                            <EditText
+                                android:id="@+id/detailUsia"
+                                style="@style/modifiedEditText"
+                                android:textColor="#8A8A8A"
+                                android:hint="Usia"
+                                android:enabled="false"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_width="120dp"
+                            android:layout_gravity="end">
+
+                            <EditText
+                                android:id="@+id/detailJenkel"
+                                style="@style/modifiedEditText"
+                                android:textColor="#8A8A8A"
+                                android:hint="Jenis Kelamin"
+                                android:enabled="false"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailEmail"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Email"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailNoHp"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Nomor Handphone"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailPendidikan"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Pendidikan Terakhir"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailPekerjaan"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Pekerjaan"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anggota Keluarga"
+                        android:textColor="#009688"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpIstri"
+                        style="@style/parent"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/detailIstri"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Nama Istri"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpAnak1"
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailAnak1"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Anak Pertama"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpAnak2"
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailAnak2"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Anak Kedua"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpAnak3"
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailAnak3"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Anak Ketiga"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpAnak4"
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailAnak4"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Anak Keempat"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpAnak5"
+                        style="@style/parent">
+
+                        <EditText
+                            android:id="@+id/detailAnak5"
+                            style="@style/modifiedEditText"
+                            android:textColor="#8A8A8A"
+                            android:hint="Anak Kelima"
+                            android:enabled="false"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_side_bg_white"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

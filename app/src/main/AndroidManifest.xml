@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LandingPageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- User -->
+        <activity android:name=".User.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.ProfilActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.ProfilEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.KegiatanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.KegiatanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.LaporanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.LaporanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".User.KeluhanActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Admin -->
+        <activity android:name=".Admin.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KegiatanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.LaporanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KeluhanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KegiatanTambahActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.LaporanTambahActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.PenggunaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KeluhanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.LaporanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KegiatanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.PenggunaDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.KegiatanEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.LaporanEditActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

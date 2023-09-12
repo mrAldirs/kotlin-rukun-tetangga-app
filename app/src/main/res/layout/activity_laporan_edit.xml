@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:id="@+id/judul"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Edit \nLaporan \nKeuangan \nRT Anda!"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_register_hero" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#A7FFEB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#00FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_width="130dp"
+                        android:layout_marginStart="12dp">
+
+                        <EditText
+                            android:id="@+id/edtUangMasuk"
+                            style="@style/modifiedEditText2"
+                            android:textColor="@color/black"
+                            android:hint="Uang Masuk"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_width="130dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="12dp">
+
+                        <EditText
+                            android:id="@+id/edtUangKeluar"
+                            style="@style/modifiedEditText2"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:hint="Uang Keluar"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#00FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="48dp">
+
+                        <EditText
+                            android:id="@+id/edtTotal"
+                            style="@style/modifiedEditText2"
+                            android:hint="Sisa Pemasukan"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnResult"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="="
+                        android:textColor="@color/colorAccent"
+                        android:backgroundTint="@color/colorPrimary"/>
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginHorizontal="12dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edtKeterangan"
+                        style="@style/modifiedEditText2"
+                        android:textColor="@color/black"
+                        android:hint="Keterangan"
+                        android:maxLines="2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/parent"
+                    android:layout_marginHorizontal="12dp">
+
+                    <EditText
+                        android:id="@+id/edtKegiatan"
+                        style="@style/modifiedEditText2"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Keperluan Kegiatan"
+                        android:maxLines="2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/send"
+                    android:tint="@color/colorAccent"
+                    android:layout_marginTop="24dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_side_bg_white"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
