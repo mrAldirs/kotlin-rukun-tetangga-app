@@ -73,6 +73,6 @@ If you stuck with Kotlin-specific questions or anything related to this template
 - [Api References](https://kotlinlang.org/api/latest/jvm/stdlib/)
 
 # License
-Kotlin is distributed under the terms of the Apache License (Version 2.0). See [license folder](license/README.md) for details.
+Kotlin is distributed under the terms of the Apache License (Version 2.0). See [license](LICENSE.txt) for details.
 
 ![https://www.apache.org/img/asf-estd-1999-logo.jpg](https://www.apache.org/img/asf-estd-1999-logo.jpg)
